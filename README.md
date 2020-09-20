@@ -7,4 +7,4 @@
 - 测试框架使用 Jest，运行 `npm run test` 后，报告将存放在 coverage 目录中。
 - 使用 ESLint 作为代码检测工具
 - 使用 prettier 美化代码格式，推荐使用 VSCode 进行开发，并下载 Prettier 扩展，代码在保存的时候将自动进行格式化。
-- 使用 huskyrc 作为 git 钩子，在提交的时候，将使用 ESLint 进行代码语法检测以及使用 Jest 执行代码测试。
+- 使用 husky 配置 git 钩子，在提交的时候，将使用 ESLint 进行代码语法检测以及使用 Jest 执行代码测试。
