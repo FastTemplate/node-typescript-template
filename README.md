@@ -8,3 +8,14 @@
 - 使用 ESLint 作为代码检测工具
 - 使用 prettier 美化代码格式，推荐使用 VSCode 进行开发，并下载 Prettier 扩展，代码在保存的时候将自动进行格式化。
 - 使用 husky 配置 git 钩子，在提交的时候，将使用 ESLint 进行代码语法检测以及使用 Jest 执行代码测试。
+
+## Tips
+
+编辑器推荐使用 Visual Studio Code。
+
+为了更好的开发体验，请安装一下 VS Code 插件：
+
+- ESLint
+- Jest
+- Prettier - Code formatter
+- EditorConfig for VS Code
