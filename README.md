@@ -9,6 +9,32 @@
 - 使用 prettier 美化代码格式，推荐使用 VSCode 进行开发，并下载 Prettier 扩展，代码在保存的时候将自动进行格式化。
 - 使用 husky 配置 git 钩子，在提交的时候，将使用 ESLint 进行代码语法检测以及使用 Jest 执行代码测试。
 
+## How to use
+
+### Development
+
+由于项目是使用 TypeScript 进行开发，因此需要运行时需要先将 TypeScript 编译成 JavaScript，通过执行下面的命令，监听 src 目录下的代码变化，自动将代码编译成 JavaScript。
+
+```bash
+npm run dev
+```
+
+当代码已经转换为 JavaScript 后，运行下面的命令来跑项目。
+
+```bash
+npm run server
+```
+
+该命令使用 nodemon 监听 dist 目录的代码变化。当在不同的终端运行 `npm run dev` 以及 `npm run server` 的时候，如果 src 目录下的代码发生变化，会造成 dist 目录下的代码发生变化。dist 目录下的代码发生变化会触发 nodemon 重新运行项目，从而来确保当前运行的代码是最新的代码。
+
+### Production
+
+执行下面的命令，会将 src 中的所有代码编译输出到 dist 目录中
+
+```bash
+npm run build
+```
+
 ## Tips
 
 编辑器推荐使用 Visual Studio Code。
