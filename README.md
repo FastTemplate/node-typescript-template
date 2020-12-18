@@ -16,16 +16,8 @@
 由于项目是使用 TypeScript 进行开发，因此需要运行时需要先将 TypeScript 编译成 JavaScript，通过执行下面的命令，监听 src 目录下的代码变化，自动将代码编译成 JavaScript。
 
 ```bash
-npm run dev
+npm run dev:build
 ```
-
-当代码已经转换为 JavaScript 后，运行下面的命令来跑项目。
-
-```bash
-npm run server
-```
-
-该命令使用 nodemon 监听 dist 目录的代码变化。当在不同的终端运行 `npm run dev` 以及 `npm run server` 的时候，如果 src 目录下的代码发生变化，会造成 dist 目录下的代码发生变化。dist 目录下的代码发生变化会触发 nodemon 重新运行项目，从而来确保当前运行的代码是最新的代码。
 
 ### Production
 
